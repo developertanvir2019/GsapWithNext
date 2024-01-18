@@ -9,14 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/imagesloaded": "^4.1.6",
-    "@types/locomotive-scroll": "^4.1.3",
-    "imagesloaded": "^5.0.0",
-    "locomotive-scroll": "^4.1.4",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18",
-    "sass": "^1.69.7"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
