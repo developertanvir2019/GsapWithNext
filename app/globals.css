@@ -2,17 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.home2 {
-  background-color: #121212;
+.content2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  left: 100px;
 }
-.home2 h1 {
+.content2 h1 {
+  text-transform: uppercase;
   font-family: "Monument";
   color: #ff77f4;
   cursor: crosshair;
 }
 .cursor-follow {
+  position: absolute;
   background: url(favicon.ico) no-repeat 50% 50%;
   background-size: cover;
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: difference;
   z-index: 2;
   user-select: none;
   pointer-events: none;
