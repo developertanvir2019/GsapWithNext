@@ -29,30 +29,30 @@ const Home2 = () => {
       mouseX = e.pageX;
       mouseY = e.pageY;
     });
-    // tl2.from(h1.children, {
-    //   skewY: 8,
-    //   y: 100,
-    //   duration: 0.3,
-    //   opacity: 0,
-    //   stagger: {
-    //     each: 0.4,
-    //     from: "end",
-    //   },
-    // });
-    // tl2.from(
-    //   cursor,
-    //   {
-    //     duration: 1.5,
-    //     delay: 1,
-    //     opacity: 0,
-    //   },
-    //   "-=1"
-    // );
+    tl2.from(h1.children, {
+      skewY: 8,
+      y: 100,
+      duration: 0.3,
+      opacity: 0,
+      stagger: {
+        each: 0.4,
+        from: "end",
+      },
+    });
+    tl2.from(
+      cursor,
+      {
+        duration: 1.5,
+        delay: 1,
+        opacity: 0,
+      },
+      "-=1"
+    );
   }, []);
   return (
     <div className="h-96 w-screen overflow-hidden bg-[#121212]">
       <div
-        // ref={(el) => (h1 = el)}
+        ref={(el) => (h1 = el)}
         className="content2"
       >
         <h1 className="text-3xl font-bold py-2">Tanvir Ahmed</h1>

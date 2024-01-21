@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --backgroundColor: #fef852;
+  --backgroundColorSecondary: #fffc94;
+  --textPrimarycolor: #2a2a2a;
+  --headingBig: clamp(3rem, 10vw, 15rem);
+}
+/* home component 2 */
 .content2 {
   position: absolute;
   display: flex;
@@ -26,4 +33,20 @@
   user-select: none;
   pointer-events: none;
   transform: translate(5px, 5px);
+}
+
+/* home 3 */
+.home3 {
+  background-color: var(--backgroundColor);
+}
+
+.reveal {
+  padding-left: 30%;
+  padding-right: 10%;
+}
+.reveal-text {
+  font-size: var(--headingBig);
+  font-weight: 800;
+  color: var(--backgroundColor);
+  filter: drop-shadow(0 0 0.06rem rgl);
 }
